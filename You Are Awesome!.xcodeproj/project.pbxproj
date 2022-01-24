@@ -13,9 +13,6 @@
 		E97A8E2F279E6E0F0089895A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97A8E2D279E6E0F0089895A /* Main.storyboard */; };
 		E97A8E31279E6E110089895A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97A8E30279E6E110089895A /* Assets.xcassets */; };
 		E97A8E34279E6E110089895A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97A8E32279E6E110089895A /* LaunchScreen.storyboard */; };
-		E97A8E3F279E6E110089895A /* You_Are_Awesome_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A8E3E279E6E110089895A /* You_Are_Awesome_Tests.swift */; };
-		E97A8E49279E6E110089895A /* You_Are_Awesome_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A8E48279E6E110089895A /* You_Are_Awesome_UITests.swift */; };
-		E97A8E4B279E6E110089895A /* You_Are_Awesome_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A8E4A279E6E110089895A /* You_Are_Awesome_UITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		E97A8E33279E6E110089895A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E97A8E35279E6E110089895A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E97A8E3A279E6E110089895A /* You Are Awesome!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "You Are Awesome!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E97A8E3E279E6E110089895A /* You_Are_Awesome_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = You_Are_Awesome_Tests.swift; sourceTree = "<group>"; };
 		E97A8E44279E6E110089895A /* You Are Awesome!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "You Are Awesome!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E97A8E48279E6E110089895A /* You_Are_Awesome_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = You_Are_Awesome_UITests.swift; sourceTree = "<group>"; };
-		E97A8E4A279E6E110089895A /* You_Are_Awesome_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = You_Are_Awesome_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				E97A8E26279E6E0F0089895A /* You Are Awesome! */,
-				E97A8E3D279E6E110089895A /* You Are Awesome!Tests */,
-				E97A8E47279E6E110089895A /* You Are Awesome!UITests */,
 				E97A8E25279E6E0F0089895A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				E97A8E35279E6E110089895A /* Info.plist */,
 			);
 			path = "You Are Awesome!";
-			sourceTree = "<group>";
-		};
-		E97A8E3D279E6E110089895A /* You Are Awesome!Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E97A8E3E279E6E110089895A /* You_Are_Awesome_Tests.swift */,
-			);
-			path = "You Are Awesome!Tests";
-			sourceTree = "<group>";
-		};
-		E97A8E47279E6E110089895A /* You Are Awesome!UITests */ = {
-			isa = PBXGroup;
-			children = (
-				E97A8E48279E6E110089895A /* You_Are_Awesome_UITests.swift */,
-				E97A8E4A279E6E110089895A /* You_Are_Awesome_UITestsLaunchTests.swift */,
-			);
-			path = "You Are Awesome!UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E97A8E3F279E6E110089895A /* You_Are_Awesome_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E97A8E49279E6E110089895A /* You_Are_Awesome_UITests.swift in Sources */,
-				E97A8E4B279E6E110089895A /* You_Are_Awesome_UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
