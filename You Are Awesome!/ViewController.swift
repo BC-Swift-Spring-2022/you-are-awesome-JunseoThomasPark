@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var messageCounter: UILabel!
     @IBOutlet weak var messageQuote: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     
     override func viewDidLoad() {
@@ -23,6 +24,8 @@ class ViewController: UIViewController {
         print("viewDidLoad ran...")
         messageLabel.text = "Amazeballs"
         messageCounter.text = ""
+        messageCounter.text = ""
+        messageQuote.text = ""
         
     }
     
@@ -30,13 +33,21 @@ class ViewController: UIViewController {
     @IBAction func messageButton(_ sender: UIButton) {
         print("Button Pressed...")
         counter = counter + 1
-        messageLabel.text = "You are Awesome!"
+        
         messageLabel.textColor = UIColor.gray
         messageCounter.text = "Button pressed " + String(counter) + " times"
         messageCounter.textColor = UIColor.purple
-    }
-    
-    @IBAction func quoteButton(_ sender: UIButton) {
+        
+        if messageLabel.text == "You are Awesome!"{
+            messageLabel.text = "You are Great!"
+            imageView.image = UIImage(named: "image1")
+        }
+        else {
+            messageLabel.text = "You are Awesome!"
+            imageView.image = UIImage(named: "image0")
+        }
+        
+        
         let urlString = "https://api.kanye.rest/"
         guard let url = URL(string: urlString) else {return}
 
@@ -54,8 +65,8 @@ class ViewController: UIViewController {
             }
             
         }.resume()
-        
     }
+    
     
 
 }
