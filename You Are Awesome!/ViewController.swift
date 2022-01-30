@@ -34,17 +34,20 @@ class ViewController: UIViewController {
         print("Button Pressed...")
         counter = counter + 1
         
+        let imageNum = Int.random(in: 1...7)
+        print(imageNum)
         messageLabel.textColor = UIColor.gray
         messageCounter.text = "Button pressed " + String(counter) + " times"
         messageCounter.textColor = UIColor.purple
         
         if messageLabel.text == "You are Awesome!"{
             messageLabel.text = "You are Great!"
-            imageView.image = UIImage(named: "image1")
+            imageView.image = UIImage(named: "image"+String(imageNum))
+            
         }
         else {
             messageLabel.text = "You are Awesome!"
-            imageView.image = UIImage(named: "image0")
+            imageView.image = UIImage(named: "image"+String(imageNum))
         }
         
         
