@@ -30,9 +30,21 @@ class ViewController: UIViewController {
     }
     
     var counter = 0
+    var messageNumber = 0
+    
     @IBAction func messageButton(_ sender: UIButton) {
+        let messages = ["You are Awesome",
+                        "You are Great",
+                        "You are Fantastic",
+                        "Fab, that's you!"]
+        
         print("Button Pressed...")
         counter = counter + 1
+        messageNumber += 1
+        
+        if messageNumber == messages.count {
+            messageNumber = 0
+        }
         
         let imageNum = Int.random(in: 1...7)
         print(imageNum)
@@ -40,17 +52,11 @@ class ViewController: UIViewController {
         messageCounter.text = "Button pressed " + String(counter) + " times"
         messageCounter.textColor = UIColor.purple
         
-        if messageLabel.text == "You are Awesome!"{
-            messageLabel.text = "You are Great!"
-            imageView.image = UIImage(named: "image"+String(imageNum))
-            
-        }
-        else {
-            messageLabel.text = "You are Awesome!"
-            imageView.image = UIImage(named: "image"+String(imageNum))
-        }
+        messageLabel.text = messages[messageNumber]
+        imageView.image = UIImage(named: "image"+String(imageNum))
         
         
+        // kanye quote api stuff //
         let urlString = "https://api.kanye.rest/"
         guard let url = URL(string: urlString) else {return}
 
