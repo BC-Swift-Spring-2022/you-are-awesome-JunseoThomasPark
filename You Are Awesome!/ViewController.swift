@@ -30,21 +30,20 @@ class ViewController: UIViewController {
     }
     
     var counter = 0
-    var messageNumber = 0
+    
     
     @IBAction func messageButton(_ sender: UIButton) {
         let messages = ["You are Awesome",
                         "You are Great",
                         "You are Fantastic",
-                        "Fab, that's you!"]
-        
+                        "Fab, that's you!",
+                        "You are awesome like Kanye",
+                        "Kanye loves you",
+                        "Kanye told me he was thinking about you while rapping"]
+        let messageNumber = Int.random(in:0...messages.count-1)
         print("Button Pressed...")
         counter = counter + 1
-        messageNumber += 1
-        
-        if messageNumber == messages.count {
-            messageNumber = 0
-        }
+    
         
         let imageNum = Int.random(in: 1...7)
         print(imageNum)
